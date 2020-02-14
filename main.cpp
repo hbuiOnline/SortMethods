@@ -2,7 +2,7 @@
 //ID#: 1858671
 //COSC 2430 Data Structure
 //Professor: Nouhad Rizk
-//Homework 3
+//Implementation of 3 different sorting method such as Merge, Shell, and quickSort
 
 #include <iostream>
 #include <string>
