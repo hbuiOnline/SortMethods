@@ -425,29 +425,29 @@ public:
 
 int main(int argc, char * argv[]) {
     
-//    ArgumentManager am(argc, argv);
-//    const string inputFileName = am.get("input");
-//    const string commandLine = am.get("command");
-//    const string outputFileName = am.get("output");
+    ArgumentManager am(argc, argv);
+    const string inputFileName = am.get("input");
+    const string commandLine = am.get("command");
+    const string outputFileName = am.get("output");
+
+    //string outputFileName = "output33.txt";
+    Sorting obj;
+    ofstream output(outputFileName);
+
+    obj.parsing(inputFileName);
+    obj.command(commandLine, output);
+
+//        ArgumentManager am(argc, argv);
+//        const string inputFileName = am.get("input");
+//        const string commandLine = am.get("command");
+//        //const string outputFileName = am.get("output");
 //
-//    //string outputFileName = "output33.txt";
-//    Sorting obj;
-//    ofstream output(outputFileName);
+//        string outputFileName = "output39.txt";
+//        Sorting obj;
+//        ofstream output(outputFileName);
 //
-//    obj.parsing(inputFileName);
-//    obj.command(commandLine, output);
-
-        ArgumentManager am(argc, argv);
-        const string inputFileName = am.get("input");
-        const string commandLine = am.get("command");
-        //const string outputFileName = am.get("output");
-
-        string outputFileName = "output39.txt";
-        Sorting obj;
-        ofstream output(outputFileName);
-
-        obj.parsing("input39.txt");
-        obj.command("command39.txt", output);
+//        obj.parsing("input39.txt");
+//        obj.command("command39.txt", output);
     
     
     return 0;
